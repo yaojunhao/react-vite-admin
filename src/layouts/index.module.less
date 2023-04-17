@@ -1,0 +1,139 @@
+.layout-container {
+  background-color: #f0f1f2;
+  min-height: 100vh;
+  overflow: hidden;
+
+  .ant-menu-item {
+    font-size: 14px !important;
+  }
+
+  .header {
+    height: 48px;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 1px 4px rgb(0 21 41 / 8%);
+
+    .flex-bet {
+      height: 48px;
+      margin: 0 auto;
+      padding: 0 20px 0 32px;
+
+      .logoWrap {
+        .logo {
+          width: 36px;
+          height: 36px;
+          background-color: #001529;
+          margin-right: 8px;
+        }
+
+        margin-right: 90px;
+      }
+
+      .menuWrap {
+        flex: 1;
+        height: 100%;
+
+        .menu {
+          height: 100%;
+          margin-right: 40px;
+          color: #001529;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          opacity: 0.65;
+          cursor: pointer;
+
+          &.on {
+            border-bottom: 2px solid #001529;
+            opacity: 1;
+          }
+
+          .icon {
+            font-size: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .layout-content {
+    display: flex;
+
+    .menuwrap {
+      height: 100vh;
+      position: relative;
+
+      .coll {
+        background-color: #001529;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 8px 16px;
+
+        .btn {
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+
+      .menu {
+        padding: 8px 0;
+        height: 100vh;
+        background-color: #001529;
+        overflow: auto;
+      }
+    }
+
+    .children {
+      height: 100vh;
+      overflow-y: auto;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+
+  .menuTitle {
+    height: 48px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #001529;
+    line-height: 48px;
+    text-align: center;
+    white-space: nowrap;
+    border-bottom: 1px solid rgba(244, 244, 244, 0.1);
+
+    img {
+      margin-right: 12px;
+    }
+  }
+
+  .sub-page {
+    padding: 8px 16px;
+    height: calc(100vh - 48px);
+    overflow-y: scroll;
+    background: rgb(236, 236, 236);
+  }
+
+  .global_exit {
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}
+
+.global_herd {
+  padding: 12px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.global_herd_btn {
+  margin: 20px 10px 20px 10px;
+}
