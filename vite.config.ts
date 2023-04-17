@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import * as path from "path";
 
 export default defineConfig({
-  // base: "/foo/", // 公共基础路径
+  base: "point-admin", // 公共基础路径
   plugins: [react()],
   // 设置路径别名
   resolve: {
